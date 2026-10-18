@@ -1,0 +1,1041 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>PawClick Training Clicker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="PawClick Smart Training Clicker: a mechanical clicker with a wrist strap for positive-reinforcement training of dogs and cats. No batteries needed. Choose a single clicker or a 2-piece set.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"PawClick Smart Training Clicker","description":"Mechanical training clicker with wrist strap for positive-reinforcement training of dogs and cats. No batteries required. Approx. 5 x 5 x 5 cm.","brand":{"@type":"Brand","name":"PawClick"},"offers":{"@type":"AggregateOffer","priceCurrency":"EUR","lowPrice":"9.99","highPrice":"14.99","offerCount":"10","availability":"https://schema.org/InStock"}}
+</script>
+<style>
+/* Layout concept: one long, calm product page. Purchase panel first, then proof-of-use sections on alternating cream / white / leaf bands, closing on a forest-green call to action. */
+:root{
+  --bg:#FFFFFF; --cream:#F6F2E8; --leaf:#E3EFE3; --card:#FFFFFF;
+  --ink:#14221B; --muted:#56655C; --line:#E3DDCF;
+  --btn:#1E4B38; --btn-ink:#F6F2E8; --btn-hover:#163A2B;
+  --band:#1E4B38; --band-ink:#F6F2E8;
+  --accent:#2E7D57; --gold:#E0A526; --focus:#1E7FD0; --warn:#9A3412; --warn-bg:#FDF0E6;
+  --font-display:'Bricolage Grotesque','DM Sans',system-ui,sans-serif;
+  --font-body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r:18px; --r-sm:12px;
+  --shadow:0 1px 2px rgba(20,34,27,.06),0 10px 28px rgba(20,34,27,.08);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1813; --cream:#13221A; --leaf:#183026; --card:#172A21;
+    --ink:#EAF1EC; --muted:#A5B6AB; --line:#2A3F33;
+    --btn:#6CC79A; --btn-ink:#0B1A12; --btn-hover:#86D6AC;
+    --band:#0F2C20; --band-ink:#EAF1EC;
+    --accent:#7FD1A5; --gold:#EDB63A; --focus:#6DB6F2; --warn:#F6B98A; --warn-bg:#3A2415;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1813; --cream:#13221A; --leaf:#183026; --card:#172A21;
+  --ink:#EAF1EC; --muted:#A5B6AB; --line:#2A3F33;
+  --btn:#6CC79A; --btn-ink:#0B1A12; --btn-hover:#86D6AC;
+  --band:#0F2C20; --band-ink:#EAF1EC;
+  --accent:#7FD1A5; --gold:#EDB63A; --focus:#6DB6F2; --warn:#F6B98A; --warn-bg:#3A2415;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--font-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--band)}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--font-display);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(28px,4vw,40px);font-weight:700}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:700}
+h3{font-size:19px;font-weight:700}
+p{margin:0}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.vh{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.wrap{max-width:1200px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ic{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+section{scroll-margin-top:72px}
+.band{padding-block:clamp(48px,7vw,88px)}
+.band.cream{background:var(--cream)}
+.band.leaf{background:var(--leaf)}
+.sec-head{display:flex;flex-direction:column;gap:12px;max-width:640px;margin-bottom:36px}
+
+/* announcement + nav */
+.announce{background:var(--band);color:var(--band-ink);text-align:center;font-size:13px;font-weight:500;padding:8px 0}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--font-display);font-weight:700;font-size:21px}
+.logo-mark{width:34px;height:34px;border-radius:10px;background:var(--btn);color:var(--btn-ink);display:grid;place-items:center}
+.logo-mark .ic{width:20px;height:20px}
+.logo sup{font-size:.5em;font-weight:500;margin-left:1px;vertical-align:super}
+.nav-links{display:flex;gap:26px;margin-left:auto;margin-right:8px}
+.nav-links a{text-decoration:none;font-weight:500;padding:6px 2px;border-bottom:2px solid transparent}
+.nav-links a:hover{border-color:var(--accent)}
+.icon-btn{position:relative;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);display:grid;place-items:center}
+.icon-btn:hover{border-color:var(--accent)}
+.cart-count{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;border-radius:10px;background:var(--btn);color:var(--btn-ink);font-size:12px;font-weight:700;display:grid;place-items:center;padding:0 5px}
+.menu-btn{display:none}
+.mobile-menu{border-top:1px solid var(--line);background:var(--bg)}
+.mobile-menu a{display:block;padding:14px 0;text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}
+@media (max-width:760px){
+  .nav-links{display:none}
+  .menu-btn{display:grid;margin-left:auto}
+}
+@media (min-width:761px){.mobile-menu{display:none!important}}
+
+/* product */
+.product{padding-block:clamp(24px,4vw,48px) clamp(40px,6vw,72px)}
+.p-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media (max-width:860px){.p-grid{grid-template-columns:minmax(0,1fr)}}
+.gallery{display:flex;flex-direction:column;gap:14px;position:sticky;top:84px}
+@media (max-width:860px){.gallery{position:static}}
+.stage{position:relative;aspect-ratio:1/1;max-width:100%;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.stage img{height:92%;width:auto;max-width:80%;object-fit:contain}
+.stage.photo-dog img{height:100%;width:100%;max-width:100%;object-fit:cover;object-position:50% 35%}
+.stage.is-set{gap:4%;padding:0 4%}
+.stage.is-set img{height:78%;width:auto;max-width:46%;margin:0}
+.stage.is-set img:first-child{transform:rotate(-3deg)}
+.stage.is-set #mainImg2{transform:rotate(3deg)}
+.zoom{position:absolute;right:12px;bottom:12px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.92);color:#14221B;display:grid;place-items:center}
+.badge-set{position:absolute;left:12px;top:12px;background:var(--btn);color:var(--btn-ink);font-weight:700;font-size:13px;border-radius:999px;padding:4px 12px}
+.photo-note{font-size:13px;color:var(--muted);min-height:1.2em}
+.thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.thumb{aspect-ratio:1/1;padding:0;border:2px solid var(--line);border-radius:var(--r-sm);overflow:hidden;background:#fff}
+.thumb img{width:100%;height:100%;object-fit:contain}
+.thumb[data-key="dog"] img{object-fit:cover}
+.thumb[aria-current="true"]{border-color:var(--btn)}
+.info{display:flex;flex-direction:column;gap:20px;min-width:0}
+.rating{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.stars{display:flex;gap:2px;color:var(--gold)}
+.stars svg{width:18px;height:18px;fill:currentColor}
+.stars .off{fill:none;stroke:currentColor;stroke-width:1.5;opacity:.55}
+.sub{font-size:18px;color:var(--muted);max-width:46ch}
+.ticks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+@media (max-width:520px){.ticks{grid-template-columns:minmax(0,1fr)}}
+.ticks li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:15px}
+.ticks .ic{width:20px;height:20px;color:var(--accent);margin-top:2px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0;font-weight:700;margin-bottom:10px;font-size:15px}
+.packs{display:grid;gap:10px}
+.pack input{position:absolute;opacity:0;pointer-events:none}
+.pack label{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:2px solid var(--line);border-radius:var(--r-sm);background:var(--card);cursor:pointer;position:relative}
+.pack label:hover{border-color:var(--accent)}
+.pack input:checked+label{border-color:var(--btn);box-shadow:0 0 0 1px var(--btn)}
+.pack input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
+.pack .t{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pack .t strong{font-size:16px}
+.pack .t span{font-size:14px;color:var(--muted)}
+.was{opacity:.6;font-weight:500;font-size:.8em;margin-right:4px;text-decoration-thickness:1.5px}
+.pack .pr{font-family:var(--font-display);font-weight:700;font-size:20px;white-space:nowrap}
+.best{display:inline-block;margin-left:8px;font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:.06em;background:var(--btn);color:var(--btn-ink);border-radius:999px;padding:2px 9px;vertical-align:2px}
+.swatches{display:flex;flex-wrap:wrap;gap:10px}
+.sw{position:relative}
+.sw input{position:absolute;opacity:0;pointer-events:none}
+.sw label{display:block;width:44px;height:44px;border-radius:50%;border:2px solid var(--line);padding:3px;cursor:pointer;background:var(--card)}
+.sw .dot{display:block;width:100%;height:100%;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)}
+.sw input:checked+label{border-color:var(--btn);box-shadow:0 0 0 1px var(--btn)}
+.sw input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
+.color-line{font-weight:400;color:var(--muted)}
+.buy-row{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}
+.qty{display:flex;align-items:center;border:2px solid var(--line);border-radius:999px;background:var(--card);height:56px}
+.qty button{width:48px;height:100%;border:0;background:none;font-size:22px;border-radius:999px}
+.qty button:hover{background:var(--leaf)}
+.qty output{min-width:32px;text-align:center;font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:999px;border:2px solid var(--btn);font-weight:700;letter-spacing:.04em;text-decoration:none;text-align:center;transition:background .15s,transform .15s}
+.btn-primary{background:var(--btn);color:var(--btn-ink);flex:1 1 220px}
+.btn-primary:hover{background:var(--btn-hover);border-color:var(--btn-hover)}
+.btn-ghost{background:transparent;color:var(--ink);width:100%}
+.btn-ghost:hover{background:var(--leaf)}
+.btn-light{background:var(--band-ink);color:var(--band);border-color:var(--band-ink)}
+.btn-light:hover{transform:translateY(-1px)}
+.btn[disabled],.btn[aria-disabled="true"]{opacity:.5;pointer-events:none}
+.status{min-height:1.4em;font-size:14px;color:var(--warn)}
+.sku{font-size:13px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.sku span{overflow-wrap:anywhere}
+.trust{border:1px solid var(--line);border-radius:var(--r);background:var(--card);overflow:hidden}
+.trust div{display:flex;gap:14px;padding:14px 18px}
+.trust div+div{border-top:1px solid var(--line)}
+.trust .ic{color:var(--accent);margin-top:2px}
+.trust strong{display:block;font-size:15px}
+.trust p{font-size:14px;color:var(--muted)}
+.pay{font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.pay .ic{width:16px;height:16px}
+
+/* sections */
+.desc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(24px,5vw,64px);align-items:start}
+@media (max-width:860px){.desc{grid-template-columns:minmax(0,1fr)}}
+.desc .copy{display:flex;flex-direction:column;gap:16px;font-size:17px;max-width:62ch}
+.feat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:900px){.feat{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.feat{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px;transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card .ico{width:48px;height:48px;border-radius:14px;background:var(--leaf);color:var(--accent);display:grid;place-items:center;margin-bottom:6px}
+.card .ico .ic{width:26px;height:26px}
+.card p{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;list-style:none;padding:0;margin:0}
+@media (max-width:860px){.steps{grid-template-columns:minmax(0,1fr)}}
+.step{background:var(--card);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px;border:1px solid var(--line)}
+.step svg.art{width:100%;max-width:220px;height:auto;align-self:center}
+.step .n{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--accent)}
+.step p{color:var(--muted);font-size:15px}
+.note{margin-top:24px;max-width:70ch;color:var(--muted);font-size:15px}
+.inc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center}
+@media (max-width:860px){.inc{grid-template-columns:minmax(0,1fr)}}
+.inc-art{position:relative;aspect-ratio:4/3;background:#fff;border:1px solid var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.inc-art{gap:6%}
+.inc-art img{height:82%;width:auto;max-width:36%;object-fit:contain;margin:0}
+.inc-art img:first-child{transform:rotate(-3deg)}
+.inc-art img+img{transform:rotate(3deg)}
+.inc-art small{position:absolute;left:14px;bottom:10px;color:#56655C;font-size:12px}
+.inc ul{list-style:none;padding:0;margin:20px 0;display:grid;gap:12px}
+.inc li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
+.inc li .ic{color:var(--accent);margin-top:2px}
+.fine{font-size:14px;color:var(--muted)}
+.life{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+@media (max-width:860px){.life{grid-template-columns:minmax(0,1fr)}}
+.life-img{min-height:380px;height:100%;width:100%;object-fit:cover;object-position:50% 32%}
+.life-copy{display:flex;flex-direction:column;gap:18px;justify-content:center;align-items:flex-start;padding-block:clamp(36px,6vw,72px);padding-left:clamp(20px,5vw,72px);padding-right:max(16px,env(safe-area-inset-right,0px));background:var(--cream)}
+.life-copy p{font-size:18px;max-width:46ch;color:var(--muted)}
+.life-copy .btn{width:auto}
+@media (max-width:860px){.life-copy{padding-left:max(16px,env(safe-area-inset-left,0px))}}
+.rev-top{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-bottom:28px}
+.score{font-family:var(--font-display);font-weight:700;font-size:48px;line-height:1}
+.rev-tools{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-weight:500;font-size:14px;min-height:40px}
+.chip[aria-pressed="true"]{background:var(--btn);color:var(--btn-ink);border-color:var(--btn)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:900px){.rev-grid{grid-template-columns:minmax(0,1fr)}}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:10px}
+.rev-view{overflow:hidden;padding:2px;margin:0 -2px}
+.rev-track{display:flex;gap:18px;will-change:transform}
+.rev-view{max-width:720px;margin-left:auto;margin-right:auto}
+.rev-track .rev{flex:0 0 100%;padding:28px}
+.rev-track .rev p{font-size:18px}
+.rev-track.static{overflow-x:auto;scroll-snap-type:x mandatory}
+.rev-track.static .rev{scroll-snap-align:start}
+.rev .who{font-size:14px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+.demo-flag{background:var(--warn-bg);color:var(--warn);border-radius:var(--r-sm);padding:10px 14px;font-size:14px;margin-bottom:18px}
+.empty{border:2px dashed var(--line);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;background:var(--card)}
+.empty p{max-width:56ch;color:var(--muted)}
+.addr{font-weight:700;user-select:all;overflow-wrap:anywhere}
+.faq{max-width:820px;display:flex;flex-direction:column}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font-weight:700;font-size:17px;cursor:pointer;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:26px;font-weight:500;color:var(--accent);line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 0 22px;color:var(--muted);max-width:68ch}
+.cta{background:var(--band);color:var(--band-ink)}
+.cta-in{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center}
+@media (max-width:860px){.cta-in{grid-template-columns:minmax(0,1fr)}}
+.cta p.lead{font-size:18px;opacity:.9;max-width:46ch}
+.cta .copy{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.opts{display:flex;gap:10px;flex-wrap:wrap}
+.opts span{border:1px solid rgba(246,242,232,.4);border-radius:999px;padding:8px 16px;font-weight:500;font-size:15px}
+.cta img{border-radius:var(--r);aspect-ratio:4/3;width:100%;object-fit:cover;object-position:50% 35%}
+footer{background:var(--cream);padding-block:48px 28px;border-top:1px solid var(--line)}
+.foot{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:32px}
+@media (max-width:760px){.foot{grid-template-columns:minmax(0,1fr)}}
+.foot h3{font-size:15px;margin-bottom:12px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15px}
+.foot a{color:var(--muted);text-underline-offset:3px}
+.foot a:hover{color:var(--ink)}
+.foot p{color:var(--muted);font-size:15px;max-width:40ch;margin-top:12px}
+.legal{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+/* cart drawer + lightbox */
+.layer{position:fixed;inset:0;z-index:70;display:flex;justify-content:flex-end}
+.scrim{position:absolute;inset:0;background:rgba(8,16,12,.55)}
+.drawer{position:relative;width:min(440px,100%);height:100%;background:var(--bg);display:flex;flex-direction:column;box-shadow:var(--shadow);padding-top:env(safe-area-inset-top,0px);padding-right:env(safe-area-inset-right,0px)}
+.d-head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}
+.d-body{flex:1;overflow:auto;padding:8px 20px}
+.line{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.line .th{width:72px;height:72px;border-radius:var(--r-sm);border:1px solid var(--line);background:#fff;display:grid;place-items:center;overflow:hidden}
+.line .th img{width:100%;height:100%;object-fit:contain}
+.line .th i{width:34px;height:34px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)}
+.line h4{margin:0;font-size:15px;line-height:1.3}
+.line .m{font-size:13px;color:var(--muted)}
+.line .ops{display:flex;align-items:center;justify-content:space-between;margin-top:8px;gap:8px}
+.mini{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;height:36px}
+.mini button{width:36px;height:100%;border:0;background:none;border-radius:999px}
+.mini output{min-width:24px;text-align:center;font-weight:700;font-size:14px}
+.rm{background:none;border:0;text-decoration:underline;color:var(--muted);font-size:13px;min-height:36px;padding:0 4px}
+.d-foot{padding:16px 20px calc(16px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.row-s{display:flex;justify-content:space-between;font-size:15px;color:var(--muted)}
+.sub-row{display:flex;justify-content:space-between;font-weight:700;font-size:18px}
+.d-empty{padding:48px 8px;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center;color:var(--muted)}
+.lb{background:rgba(8,16,12,.86);align-items:center;justify-content:center;padding:24px}
+.lb-in{position:relative;max-width:min(92vw,720px);max-height:90vh}
+.lb img{max-height:86vh;width:auto;max-width:100%;border-radius:var(--r);background:#fff}
+.lb .icon-btn{position:absolute;top:-12px;right:-12px;background:#fff;color:#14221B}
+.polwrap{align-items:center;justify-content:center;padding:16px;background:rgba(8,16,12,.7)}
+.pol{position:relative;width:min(720px,100%);max-height:90vh;background:var(--bg);color:var(--ink);border-radius:var(--r);display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.pol-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line)}
+.pol-body{overflow:auto;padding:8px 24px 24px;font-size:15px}
+.pol-body h1{display:none}
+.pol-body h3{font-size:17px;margin:20px 0 6px}
+.pol-body p{color:var(--muted);margin:0 0 8px}
+.linkbtn{background:none;border:0;padding:0;color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-size:inherit;cursor:pointer;text-align:left}
+.linkbtn:hover{color:var(--ink)}
+.faq .a .linkbtn{color:var(--accent);font-weight:500}
+
+/* motion: every effect ends in a fully visible state; reduced-motion users get none of it (rule near the top) */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes slideIn{from{transform:translateX(100%)}to{transform:none}}
+@keyframes popIn{from{opacity:0;transform:scale(.96) translateY(8px)}to{opacity:1;transform:none}}
+@keyframes swapIn{from{opacity:0;scale:.94}to{opacity:1;scale:1}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -9px}}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.55)}100%{transform:scale(1)}}
+@keyframes sheen{0%,55%{transform:translateX(-130%)}100%{transform:translateX(230%)}}
+@keyframes wag{0%,100%{rotate:0deg}25%{rotate:-14deg}75%{rotate:14deg}}
+@keyframes pulseWave{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes popBadge{0%,70%,100%{transform:scale(1)}82%{transform:scale(1.22)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(var(--r,0deg))}50%{transform:translate(14px,-24px) rotate(calc(var(--r,0deg) + 12deg))}}
+
+.gallery{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.info>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.info>*:nth-child(1){animation-delay:.05s}.info>*:nth-child(2){animation-delay:.1s}.info>*:nth-child(3){animation-delay:.15s}.info>*:nth-child(4){animation-delay:.2s}
+.info>*:nth-child(5){animation-delay:.25s}.info>*:nth-child(6){animation-delay:.3s}.info>*:nth-child(7){animation-delay:.35s}.info>*:nth-child(8){animation-delay:.4s}
+.info>*:nth-child(9){animation-delay:.45s}.info>*:nth-child(10){animation-delay:.5s}.info>*:nth-child(11){animation-delay:.55s}.info>*:nth-child(12){animation-delay:.6s}
+
+.stage img{animation:bob 6s ease-in-out infinite;will-change:translate,opacity}
+.stage img.swap{animation:swapIn .45s cubic-bezier(.2,.7,.2,1) both,bob 6s ease-in-out .45s infinite}
+.stage.photo-dog img{animation:none}
+.stage.photo-dog img.swap{animation:swapIn .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes slideInR{from{opacity:0;translate:72px 0}to{opacity:1;translate:0 0}}
+.stage img.slide{animation:slideInR 1.2s cubic-bezier(.45,0,.2,1) both,bob 6s ease-in-out 1.2s infinite}
+.stage.photo-dog img.slide{animation:slideInR 1.2s cubic-bezier(.45,0,.2,1) both}
+
+.btn-primary:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+#addBtn,.best{position:relative;overflow:hidden}
+#addBtn::after,.best::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.32) 50%,transparent 70%);transform:translateX(-130%);animation:sheen 5s ease-in-out infinite}
+.best::after{animation-duration:4s}
+.cart-count.bump,.icon-btn.bump{animation:bump .45s ease}
+.logo:hover .logo-mark .ic{animation:wag .6s ease-in-out}
+.card:hover .ico .ic{animation:wag .6s ease-in-out}
+.sw label{transition:transform .15s,border-color .15s,box-shadow .15s}
+.sw label:hover{transform:scale(1.12)}
+.sw input:checked+label{transform:scale(1.06)}
+.thumb{transition:transform .15s,border-color .15s}
+.thumb:hover{transform:translateY(-3px)}
+.pack label{transition:border-color .15s,box-shadow .15s,transform .15s}
+.pack label:hover{transform:translateY(-1px)}
+.faq details[open] .a{animation:fade .35s ease both}
+.waves{animation:pulseWave 1.8s ease-in-out infinite}
+.pop{transform-origin:150px 30px;animation:popBadge 3.2s ease-in-out infinite}
+.hand{transform-origin:110px 64px;animation:spin 14s linear infinite}
+.layer:not([hidden]) .scrim{animation:fade .25s both}
+.layer:not([hidden]) .drawer{animation:slideIn .32s cubic-bezier(.2,.8,.2,1) both}
+.polwrap:not([hidden]) .pol,.lb:not([hidden]) .lb-in{animation:popIn .25s cubic-bezier(.2,.8,.2,1) both}
+.pre{opacity:.25;transform:translateY(32px);transition:opacity .8s ease var(--d,0ms),transform .8s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.pre.in{opacity:1;transform:none}
+.cta{position:relative;overflow:hidden}
+.cta .wrap{position:relative}
+.floaties{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.floaties .fl{position:absolute;width:56px;height:56px;color:var(--band-ink);opacity:.1;animation:drift 9s ease-in-out infinite}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-paw" viewBox="0 0 24 24"><circle cx="6.5" cy="10" r="1.9"/><circle cx="11" cy="6.5" r="1.9"/><circle cx="16.5" cy="7.5" r="1.9"/><circle cx="19" cy="12" r="1.9"/><path d="M12 12c-3.2 0-5.6 2.6-5.6 4.8 0 1.7 1.6 2.4 3.2 2.4 1 0 1.6-.5 2.4-.5s1.4.5 2.4.5c1.6 0 3.2-.7 3.2-2.4 0-2.2-2.4-4.8-5.6-4.8z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7.5l9-4.5 9 4.5v9l-9 4.5-9-4.5z"/><path d="M3 7.5l9 4.5 9-4.5M12 12v9"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 010 12h-3"/></symbol>
+  <symbol id="i-click" viewBox="0 0 24 24"><circle cx="8" cy="12" r="2.6"/><path d="M13.5 8.5a5 5 0 010 7M17 6a9 9 0 010 12"/></symbol>
+  <symbol id="i-strap" viewBox="0 0 24 24"><path d="M4 7c4 0 4 3 8 3s4-3 8-3"/><path d="M4 12c4 0 4 3 8 3s4-3 8-3"/><path d="M4 17c4 0 4 3 8 3s4-3 8-3"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="8.3" cy="10.2" r="1"/><circle cx="12" cy="7.6" r="1"/><circle cx="15.7" cy="10.2" r="1"/><path d="M12 21c-1.8 0-1.8-2.2-.3-3.2 1.4-1 1.2-2.8 3.3-2.8h3.8"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><rect x="5" y="9" width="14" height="11" rx="2.5"/><path d="M8.5 9V7a3.5 3.5 0 017 0v2"/></symbol>
+  <symbol id="i-nobatt" viewBox="0 0 24 24"><rect x="3" y="8" width="16" height="8" rx="2"/><path d="M21 11v2M4 4l16 16"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11H6.2z"/><path d="M9 8V6.5a3 3 0 016 0V8"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5M10.5 8v5M8 10.5h5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.6l-5.8 3.1 1.1-6.5L2.6 9.6l6.5-.9z"/></symbol>
+</svg>
+
+<div class="announce">🐾 Make Every Training Moment Count</div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#shop" aria-label="PawClick home"><span class="logo-mark"><svg class="ic" aria-hidden="true"><use href="#i-paw"/></svg></span><span>PawClick<sup>™</sup></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#shop">Shop</a><a href="#how">How It Works</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+    </nav>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    <button class="icon-btn" id="cartBtn" type="button" aria-label="Open cart, 0 items"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg><span class="cart-count" id="cartCount" hidden>0</span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <div class="wrap"><a href="#shop">Shop</a><a href="#how">How It Works</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+  </div>
+</header>
+
+<main>
+<section class="product" id="shop" aria-labelledby="pTitle">
+  <div class="wrap p-grid">
+    <div class="gallery">
+      <div class="stage" id="stage">
+        <img id="mainImg" src="img/black.webp" alt="Black PawClick training clicker with coiled wrist strap" width="864" height="1200">
+        <img id="mainImg2" src="img/black.webp" alt="" hidden>
+        <span class="badge-set" id="setBadge" hidden>2-piece set</span>
+        <button class="zoom" id="zoomBtn" type="button" aria-label="Zoom image"><svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></button>
+      </div>
+      <p class="photo-note" id="photoNote" aria-live="polite"></p>
+      <div class="thumbs" id="thumbs" role="group" aria-label="Product photos"></div>
+    </div>
+
+    <div class="info">
+      <div class="rating" id="ratingLine"></div>
+      <h1 id="pTitle">PawClick™ — Smart Training Clicker</h1>
+      <p class="sub">Reward good behavior. Build better habits. Make training fun.</p>
+      <ul class="ticks">
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Clear click that marks the right moment</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Wrist strap keeps your hands free</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>No batteries, just press</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>For dogs and cats</li>
+      </ul>
+
+      <fieldset class="packs" id="packs">
+        <legend>Choose your option</legend>
+        <div class="pack"><input type="radio" name="pack" id="pack-set" value="set" checked><label for="pack-set"><span class="t"><strong>2-Piece Set<span class="best">BEST VALUE</span></strong><span>Two clickers with wrist straps. Choose your colour.</span></span><span class="pr"><s class="was">€19.99</s> €14.99</span></label></div>
+        <div class="pack"><input type="radio" name="pack" id="pack-single" value="single"><label for="pack-single"><span class="t"><strong>Single Clicker</strong><span>One clicker with a wrist strap.</span></span><span class="pr">€9.99</span></label></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Colour: <span class="color-line" id="colorName">Black</span></legend>
+        <div class="swatches" id="swatches" role="radiogroup" aria-label="Colour"></div>
+      </fieldset>
+
+      <div class="buy-row">
+        <div class="qty" role="group" aria-label="Quantity">
+          <button type="button" id="qMinus" aria-label="Decrease quantity">−</button>
+          <output id="qVal" aria-live="polite">1</output>
+          <button type="button" id="qPlus" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn btn-primary" id="addBtn" type="button">ADD TO CART · <s class="was" id="addWas">€19.99</s> <span id="addPrice">€14.99</span></button>
+      </div>
+      <a class="btn btn-ghost" id="buyNow" href="#" target="_blank" rel="noopener">BUY NOW</a>
+      <p class="status" id="status" role="status"></p>
+      <div class="sku"><span id="stockLine">In stock</span><span>SKU: <span id="skuVal"></span></span></div>
+
+      <div class="trust">
+        <div><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><span><strong>Secure Checkout</strong><p>Your payment is processed through our supported checkout provider.</p></span></div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg><span><strong>Shipping Information</strong><p>Flat €5.00 shipping per order. Check your estimated delivery time at checkout.</p></span></div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-return"/></svg><span><strong>Returns &amp; Support</strong><p>See our returns policy or contact our support team.</p></span></div>
+      </div>
+      <p class="pay"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg>Accepted payment methods are shown at secure checkout.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band cream" id="about" aria-labelledby="descH">
+  <div class="wrap desc">
+    <div class="sec-head" style="margin:0"><span class="eyebrow">About PawClick™</span><h2 id="descH">Make Training Easier, One Click at a Time</h2></div>
+    <div class="copy">
+      <p>Help your furry friend learn new behaviors with PawClick™, a simple and effective tool for positive-reinforcement training.</p>
+      <p>Every time your pet does something right, press the clicker to mark that exact moment, then reward them with a treat. With consistent practice, your dog or cat can learn to associate the sound with positive rewards.</p>
+      <p>Whether you're teaching basic commands, practicing fun tricks, or improving everyday behavior, PawClick™ makes it easier to communicate clearly with your pet.</p>
+      <p>Its lightweight design, convenient wrist strap, and simple mechanical operation make it a practical addition to your training routine. Choose your favorite color or keep an extra clicker at home, in your training bag, or with another family member.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="whyH">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Features</span><h2 id="whyH">Why Pet Owners Choose PawClick™</h2></div>
+    <div class="feat">
+      <article class="card"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-click"/></svg></span><h3>Clear Click Sound</h3><p>Marks the exact moment your pet performs a desired behavior, helping create a consistent connection between behavior and reward.</p></article>
+      <article class="card"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-strap"/></svg></span><h3>Convenient Wrist Strap</h3><p>Keeps the clicker close at hand while leaving your hands available for treats, toys, and the leash.</p></article>
+      <article class="card"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-palette"/></svg></span><h3>Seven Color Options</h3><p>Choose from black, pink, red, blue, cyan, white, and yellow.</p></article>
+      <article class="card"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg></span><h3>Lightweight and Portable</h3><p>Compact plastic construction, approximately 5 × 5 × 5 cm, designed to fit easily into a pocket or training bag.</p></article>
+      <article class="card"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-nobatt"/></svg></span><h3>No Batteries Required</h3><p>The clicker uses a mechanical button and does not require batteries.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band leaf" id="how" aria-labelledby="howH">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">How it works</span><h2 id="howH">Start Training in Three Simple Steps</h2></div>
+    <ol class="steps">
+      <li class="step">
+        <svg class="art" viewBox="0 0 220 120" role="img" aria-label="A clicker, sound waves and a treat"><rect x="14" y="22" width="70" height="86" rx="35" fill="var(--btn)"/><circle cx="49" cy="62" r="17" fill="var(--btn-ink)"/><circle cx="49" cy="62" r="9" fill="var(--btn)"/><path class="waves" d="M100 48q10 14 0 28M114 38q16 24 0 48" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/><circle cx="170" cy="62" r="24" fill="#C98B4A"/><circle cx="162" cy="55" r="3.5" fill="#8A5A2B"/><circle cx="178" cy="68" r="3.5" fill="#8A5A2B"/><circle cx="166" cy="73" r="3" fill="#8A5A2B"/></svg>
+        <span class="n">Step 1</span><h3>Create the Connection</h3>
+        <p>Press the clicker and immediately give your pet a small treat. Repeat around ten times in a calm environment to begin building the association.</p>
+      </li>
+      <li class="step">
+        <svg class="art" viewBox="0 0 220 120" role="img" aria-label="A paw print with a check mark"><circle cx="110" cy="60" r="46" fill="var(--card)" stroke="var(--accent)" stroke-width="4"/><g fill="var(--accent)"><circle cx="91" cy="52" r="6"/><circle cx="105" cy="42" r="6"/><circle cx="121" cy="44" r="6"/><circle cx="130" cy="57" r="6"/><path d="M110 60c-10 0-17 8-17 14 0 5 5 7 10 7 3 0 5-1.5 7-1.5s4 1.5 7 1.5c5 0 10-2 10-7 0-6-7-14-17-14z"/></g><g class="pop"><circle cx="150" cy="30" r="16" fill="var(--btn)"/><path d="M142 30l6 6 11-12" fill="none" stroke="var(--btn-ink)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+        <span class="n">Step 2</span><h3>Mark Good Behavior</h3>
+        <p>When your pet performs the behavior you want, click at the right moment, then reward them.</p>
+      </li>
+      <li class="step">
+        <svg class="art" viewBox="0 0 220 120" role="img" aria-label="A timer showing a short session"><circle cx="110" cy="64" r="44" fill="var(--card)" stroke="var(--accent)" stroke-width="4"/><path class="hand" d="M110 64V38" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/><path d="M110 64l18 10" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/><rect x="100" y="8" width="20" height="9" rx="3" fill="var(--accent)"/><path d="M110 17v3" stroke="var(--accent)" stroke-width="4"/><path d="M110 20a44 44 0 0125 8" fill="none" stroke="var(--btn)" stroke-width="7" stroke-linecap="round"/></svg>
+        <span class="n">Step 3</span><h3>Keep It Short and Positive</h3>
+        <p>Practice for around 5–10 minutes per session and finish on a positive note.</p>
+      </li>
+    </ol>
+    <p class="note">Consistency, timing, and positive reinforcement matter most. Every pet learns at its own pace, so go slowly and celebrate small wins.</p>
+  </div>
+</section>
+
+<section class="band cream" aria-labelledby="incH">
+  <div class="wrap inc">
+    <div class="inc-art" aria-hidden="false">
+      <img src="img/black.webp" alt="Black PawClick clicker with wrist strap" loading="lazy">
+      <img src="img/pink.webp" alt="Pink PawClick clicker with wrist strap" loading="lazy">
+      <small>Illustration. Your set arrives in the colour option you choose.</small>
+    </div>
+    <div>
+      <span class="eyebrow">What's included</span>
+      <h2 id="incH" style="margin-top:12px">Everything You Need to Get Started</h2>
+      <ul>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Two mechanical training clickers</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Wrist straps for both clickers</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Your selected colour option</li>
+      </ul>
+      <p class="fine">Select your preferred option above before adding to the cart. Treats, leashes, toys, and other accessories shown in photos are not included.</p>
+      <p style="margin-top:20px"><a class="btn btn-primary" href="#shop" style="display:inline-flex">CHOOSE YOUR CLICKER</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="life" aria-labelledby="lifeH">
+  <img class="life-img" src="img/dog.webp" alt="A golden retriever looks up at a hand holding a cyan training clicker in a park" loading="lazy" width="954" height="1145">
+  <div class="life-copy">
+    <span class="eyebrow">Training together</span>
+    <h2 id="lifeH">Small Steps. Stronger Bonds.</h2>
+    <p>Training is more than teaching commands. It's an opportunity to build trust, improve communication, and enjoy more moments together.</p>
+    <a class="btn btn-primary" href="#shop">SHOP PAWCLICK™</a>
+    <p class="fine">Results vary from pet to pet.</p>
+  </div>
+</section>
+
+<section class="band" id="reviews" aria-labelledby="revH">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:24px"><span class="eyebrow">Reviews</span><h2 id="revH">Loved by Pet Lovers</h2></div>
+    <div id="revBox"></div>
+  </div>
+</section>
+
+<section class="band cream" id="faq" aria-labelledby="faqH">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">FAQ</span><h2 id="faqH">Questions, answered</h2></div>
+    <div class="faq" id="faqList">
+      <details><summary>How does a training clicker work?</summary><div class="a">A clicker produces a distinct sound that marks the moment your pet performs a desired behavior. Follow the sound with a reward to build a positive association.</div></details>
+      <details><summary>Can I use it for both dogs and cats?</summary><div class="a">Yes. The clicker can be used with dogs and cats, using short, positive training sessions suited to each pet.</div></details>
+      <details><summary>Does it need batteries?</summary><div class="a">No. The clicker is mechanically operated and does not require batteries.</div></details>
+      <details><summary>What colors are available?</summary><div class="a">Black, pink, red, blue, cyan, white, and yellow, for both the single clicker and the 2-piece set. Availability depends on the option you select.</div></details>
+      <details><summary>What is included in the package?</summary><div class="a">The 2-piece set includes two training clickers with wrist straps in the selected colour option. The single option includes one clicker with a wrist strap.</div></details>
+      <details><summary>How big is the clicker?</summary><div class="a">The approximate dimensions are 5 × 5 × 5 cm.</div></details>
+      <details><summary>How long does shipping take?</summary><div class="a" id="shipAns">The estimated delivery time for your address is shown at checkout before you pay.</div></details>
+      <details><summary>What is your return policy?</summary><div class="a" id="returnAns">Our return and refund terms are available from our support team. Contact us at <span class="addr" data-email></span> and we'll help.</div></details>
+      <details><summary>How can I contact customer support?</summary><div class="a">Email us at <span class="addr" data-email></span>.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta band" aria-labelledby="ctaH">
+  <div class="floaties" aria-hidden="true">
+    <svg class="ic fl" style="--r:-14deg;left:4%;top:12%;animation-delay:-2s"><use href="#i-paw"/></svg>
+    <svg class="ic fl" style="--r:10deg;left:22%;bottom:8%;animation-delay:-5s;width:40px;height:40px"><use href="#i-paw"/></svg>
+    <svg class="ic fl" style="--r:-6deg;left:48%;top:6%;animation-delay:-7s;width:44px;height:44px"><use href="#i-paw"/></svg>
+    <svg class="ic fl" style="--r:16deg;right:8%;bottom:10%;animation-delay:-3s;width:64px;height:64px"><use href="#i-paw"/></svg>
+    <svg class="ic fl" style="--r:-10deg;right:30%;top:16%;animation-delay:-6s;width:36px;height:36px"><use href="#i-paw"/></svg>
+  </div>
+  <div class="wrap cta-in">
+    <div class="copy">
+      <h2 id="ctaH">Make Every Click Count</h2>
+      <p class="lead">Build positive habits and enjoy every little training victory with PawClick™.</p>
+      <div class="opts"><span>Single Clicker — €9.99</span><span>2-Piece Set — <s class="was">€19.99</s> €14.99</span></div>
+      <a class="btn btn-light" href="#shop">CHOOSE YOUR CLICKER</a>
+    </div>
+    <img src="img/dog.webp" alt="A happy golden retriever during a training session" loading="lazy">
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#shop"><span class="logo-mark"><svg class="ic" aria-hidden="true"><use href="#i-paw"/></svg></span><span>PawClick<sup>™</sup></span></a>
+        <p>Better Habits. Happier Pets. Simple clickers for positive-reinforcement training at home and on the go.</p>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <ul id="footLinks">
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><span class="addr" data-email></span></li>
+          <li><a id="mailLink" href="#">Write to support</a></li>
+        </ul>
+        <ul id="socials" style="margin-top:12px"></ul>
+      </div>
+    </div>
+    <p class="legal">© <span id="yr"></span> PawClick™. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="layer" id="drawerLayer" hidden>
+  <div class="scrim" id="drawerScrim"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="d-head"><h3>Your cart</h3><button class="icon-btn" id="drawerClose" type="button" aria-label="Close cart"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <div class="d-body" id="drawerBody"></div>
+    <div class="d-foot" id="drawerFoot">
+      <div class="row-s"><span>Subtotal</span><span id="subTotal">€0.00</span></div>
+      <div class="row-s"><span>Shipping</span><span id="shipCost">€5.00</span></div>
+      <div class="sub-row"><span>Total</span><span id="grandTotal">€0.00</span></div>
+      <p class="fine">Flat €5.00 shipping on every order. Taxes, if any, are shown at checkout.</p>
+      <a class="btn btn-primary" id="checkoutBtn" href="#" target="_blank" rel="noopener" style="flex:none">CHECKOUT</a>
+    </div>
+  </aside>
+</div>
+
+<div class="layer lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Enlarged product photo">
+  <div class="lb-in"><img id="lbImg" src="" alt=""><button class="icon-btn" id="lbClose" type="button" aria-label="Close enlarged photo"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+</div>
+
+<div class="layer polwrap" id="polLayer" hidden role="dialog" aria-modal="true" aria-labelledby="polTitle">
+  <div class="pol"><div class="pol-head"><h3 id="polTitle"></h3><button class="icon-btn" id="polClose" type="button" aria-label="Close policy"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div><div class="pol-body" id="polBody"></div></div>
+</div>
+
+<script>
+(function(){
+'use strict';
+/* ---- Store configuration (connected to the Shopify product) ---- */
+var SHOP = 'gffa5u-qe.myshopify.com';
+var SUPPORT_EMAIL = 'pawclicker2@gmail.com';
+var POLICIES = {
+  privacy: 'https://checkout.shopify.com/111640576339/policies/67003122003.html?locale=en',
+  shipping: '', refund: '', terms: ''          /* add a URL once the policy exists in Shopify */
+};
+var SOCIALS = [];                              /* [{name:'Instagram', url:'https://…'}] */
+var REVIEW_URL = '';                           /* link to a review app's "write a review" page */
+var POLICY_HTML = {"shipping": "<h1>Shipping policy</h1> <p>Last updated: 17 October 2026</p> <h3>Where we ship</h3><p>We ship to the countries offered at checkout. If your country is not listed, we cannot deliver there at this time.</p> <h3>Processing time</h3><p>Orders are usually processed within 1 to 3 business days after payment is confirmed.</p> <h3>Delivery time</h3><p>Our products are sent from the warehouses of our supplier partners. Delivery typically takes 2 to 4 weeks, depending on your address. The estimated delivery time for your address is shown at checkout before you pay. Delivery times are estimates, not guarantees, and can be affected by customs, carrier delays, public holidays and weather.</p> <h3>Shipping costs</h3><p>Shipping is a flat €5.00 per order. It is shown in your cart and again at checkout before you pay. Taxes and any import duties that apply to your order are shown at checkout.</p> <h3>Tracking</h3><p>When the carrier provides tracking, we send you a tracking number by email once your order has shipped. Tracking updates can take a few days to appear.</p> <h3>Orders with several items</h3><p>Items in the same order may ship separately and arrive on different days.</p> <h3>Address errors</h3><p>Please check your shipping address before you place the order. If you notice a mistake, email us as soon as possible at pawclicker2@gmail.com. We cannot change the address once an order has shipped.</p> <h3>Lost, delayed or damaged parcels</h3><p>If your order has not arrived within the estimated delivery window, or arrives damaged, email us at pawclicker2@gmail.com with your order number. We will investigate and find a solution with you.</p> <h3>Contact</h3><p>Questions about shipping? Email pawclicker2@gmail.com.</p>", "refund": "<h1>Returns and refunds policy</h1> <p>Last updated: 17 October 2026</p> <h3>Your right to return</h3><p>If you live in the European Union, you have the right to withdraw from your purchase within 14 days after you receive your order, without giving a reason. Customers elsewhere can also request a return within 14 days of delivery.</p> <h3>How to start a return</h3><p>Email us at pawclicker2@gmail.com within 14 days of receiving your order. Include your order number and tell us that you want to return the item. Please do not send anything back before we reply. We will tell you the return address and how to send the item.</p> <h3>Condition of returned items</h3><p>Items should be returned unused and in their original packaging where possible. You are responsible for the reduced value of an item if it was handled beyond what is needed to check what it is and how it works.</p> <h3>Return shipping</h3><p>Unless we tell you otherwise, you pay the cost of sending the item back. Please use a trackable service, because you are responsible for the item until it reaches us.</p> <h3>Refunds</h3><p>After we receive your returned item, or you give proof that you have sent it back, we refund the price of the item and the original standard delivery cost within 14 days. The refund goes to the payment method you used for the order. Extra costs for a more expensive delivery option you chose are not refunded.</p> <h3>Damaged, defective or wrong items</h3><p>If your item arrives damaged, does not work, or is not what you ordered, email pawclicker2@gmail.com with your order number and, if possible, a photo. We will offer a replacement or refund, and we cover the return shipping in these cases.</p> <h3>Cancelling an order</h3><p>If you want to cancel before your order has shipped, email us as soon as possible and we will cancel it and refund you if we can.</p> <h3>Your legal rights</h3><p>This policy does not affect your statutory consumer rights, including the legal guarantee that goods must match their description.</p> <h3>Contact</h3><p>Email pawclicker2@gmail.com.</p>", "terms": "<h1>Terms and conditions</h1> <p>Last updated: 17 October 2026</p> <h3>About these terms</h3><p>These terms apply to your use of our online store and to every purchase you make from it. By placing an order, you confirm that you have read and accept them. In these terms, \"we\", \"us\" and \"PawClick\" mean the store operator, and \"you\" means the person using the store.</p> <h3>Products</h3><p>PawClick sells mechanical training clickers for dogs and cats. We try to show our products as accurately as we can, but colors on your screen can differ slightly from the real product. Product sizes are approximate.</p> <h3>Orders</h3><p>When you place an order, you make an offer to buy. Your order is accepted when we confirm it by email. We may refuse or cancel an order, for example if an item is out of stock, a price or description contains an obvious error, or we suspect fraud. If we cancel a paid order, we refund you in full.</p> <h3>Prices and payment</h3><p>Prices are shown in euros and include any taxes shown at checkout. Shipping costs are shown at checkout before you pay. Payments are processed by our checkout provider, and we do not see or store your full card details.</p> <h3>Shipping and returns</h3><p>Delivery is described in our Shipping policy, and returns and refunds are described in our Returns and refunds policy. Both form part of these terms.</p> <h3>Use of the store</h3><p>You agree to use the store lawfully and not to misuse it, for example by attempting to access it without permission or interfering with how it works.</p> <h3>Pets and safe use</h3><p>The clicker is a training tool and not a toy. Use it with supervision, keep small parts away from young children, and stop using it if it is damaged. Training results vary between pets.</p> <h3>Intellectual property</h3><p>The content of this store, including text, images and logos, belongs to us or our licensors and may not be copied or used without permission.</p> <h3>Liability</h3><p>Nothing in these terms limits your statutory consumer rights or any liability that cannot be limited by law. Subject to that, we are not liable for indirect or consequential losses arising from the use of our store or products.</p> <h3>Privacy</h3><p>How we handle your personal data is described in our Privacy policy.</p> <h3>Governing law</h3><p>These terms are governed by the laws of the Republic of Croatia and by mandatory European Union consumer law. If you are a consumer, you also keep the protection of the mandatory rules of the country where you live.</p> <h3>Changes</h3><p>We may update these terms from time to time. The version in force when you place an order applies to that order.</p> <h3>Contact</h3><p>Questions about these terms? Email pawclicker2@gmail.com.</p>"};              /* in-page policy text; a URL in POLICIES overrides it */
+var REVIEW_MODE = 'live';                      /* render the supplied review entries */
+var REVIEWS_ARE_SAMPLE = true;                  /* supplied entries are not confirmed as verified customer feedback */
+var REVIEWS = [
+  {name:'Emily R.', title:'Great for training my puppy', text:"I've been using this with my puppy to teach him to sit and stay. The click is clear, and the wrist strap makes it easy to keep close while training.", rating:5, verified:false},
+  {name:'Daniel M.', title:'Simple but really useful', text:"Exactly what I needed for basic dog training. It's lightweight, easy to press, and doesn't need batteries. Great little training accessory.", rating:5, verified:false},
+  {name:'Sophie L.', title:'Love the pink color', text:"I picked the pink one, and it looks really cute! I keep it attached to my wrist during training, so I can reward my dog straight away.", rating:5, verified:false},
+  {name:'Michael T.', title:'Perfect for everyday practice', text:"I use it for recall and teaching my dog to wait before meals. It's compact and convenient, and the click helps me mark the behavior at the right moment.", rating:5, verified:false},
+  {name:'Jessica B.', title:'Great value for two', text:"The two-piece set is handy because I can keep one at home and another in my training bag. A simple tool that makes reward-based training more organized.", rating:5, verified:false}
+];
+
+var COLORS = {
+  black:{name:'Black',hex:'#1B1B1B'}, pink:{name:'Pink',hex:'#F0509F'}, red:{name:'Red',hex:'#D8312F'},
+  cyan:{name:'Cyan',hex:'#2BBBD0'}, blue:{name:'Blue',hex:'#2F6FDE'}, yellow:{name:'Yellow',hex:'#F2C230'}, white:{name:'White',hex:'#FFFFFF'}
+};
+var VARIANTS = [
+  {id:'55475107758419',pack:'set',color:'black',price:14.99,sku:'5506d7d0-7b83-4c70-b594-3ca4b7e99fb9',stock:10},
+  {id:'55475107791187',pack:'set',color:'pink',price:14.99,sku:'8bc292e0-eea5-4620-9d99-31e254b71824',stock:10},
+  {id:'55475107823955',pack:'set',color:'red',price:14.99,sku:'6a40144f-c0b9-493a-addd-220531b5a4d1',stock:10},
+  {id:'55476854161747',pack:'set',color:'cyan',price:14.99,sku:'PAWCLICK-2PC-CYAN',stock:10},
+  {id:'55476854194515',pack:'set',color:'blue',price:14.99,sku:'PAWCLICK-2PC-BLUE',stock:10},
+  {id:'55476854227283',pack:'set',color:'yellow',price:14.99,sku:'PAWCLICK-2PC-YELLOW',stock:10},
+  {id:'55476854260051',pack:'set',color:'white',price:14.99,sku:'PAWCLICK-2PC-WHITE',stock:10},
+  {id:'55475107692883',pack:'single',color:'black',price:9.99,sku:'b2f86cb1-3f95-49a4-94bd-5d77259a93bf',stock:10},
+  {id:'55475107627347',pack:'single',color:'pink',price:9.99,sku:'23bca823-3547-439e-b7b4-feb5c3244a84',stock:10},
+  {id:'55475107725651',pack:'single',color:'red',price:9.99,sku:'d356d6a5-90a1-4570-af36-51167ab44dd1',stock:10},
+  {id:'55475107529043',pack:'single',color:'cyan',price:9.99,sku:'7b2bd2e4-5876-4114-9be8-6bdea6d26afc',stock:10},
+  {id:'55475107561811',pack:'single',color:'blue',price:9.99,sku:'02764533-401d-407a-82d8-6eecc3040c53',stock:10},
+  {id:'55475107594579',pack:'single',color:'yellow',price:9.99,sku:'14e6f503-b340-48f2-be8f-d17462e82964',stock:10},
+  {id:'55475107660115',pack:'single',color:'white',price:9.99,sku:'1d2f12f3-eea0-40a6-9293-33f685bbdac5',stock:10}
+];
+var GALLERY = [
+  {key:'black',src:'img/black.webp',thumb:'img/black-thumb.webp',alt:'Black PawClick training clicker with coiled wrist strap',w:864,h:1200},
+  {key:'cyan',src:'img/cyan.webp',thumb:'img/cyan-thumb.webp',alt:'Cyan PawClick training clicker with coiled wrist strap',w:822,h:1200},
+  {key:'pink',src:'img/pink.webp',thumb:'img/pink-thumb.webp',alt:'Pink PawClick training clicker with coiled wrist strap',w:1005,h:1200},
+  {key:'blue',src:'img/blue.webp',thumb:'img/blue-thumb.webp',alt:'Blue PawClick training clicker with coiled wrist strap',w:596,h:1000},
+  {key:'yellow',src:'img/yellow.webp',thumb:'img/yellow-thumb.webp',alt:'Yellow PawClick training clicker with coiled wrist strap',w:646,h:1000},
+  {key:'white',src:'img/white.webp',thumb:'img/white-thumb.webp',alt:'White PawClick training clicker with coiled wrist strap',w:832,h:1000},
+  {key:'red',src:'img/red.webp',thumb:'img/red-thumb.webp',alt:'Red PawClick training clicker with coiled wrist strap',w:783,h:1000},
+];
+var WAS_SET = 19.99, SHIPPING = 5;
+var MAXQ = 10, KEY = 'pawclick-cart-v1';
+var eur = function(n){ return new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR'}).format(n); };
+var $ = function(id){ return document.getElementById(id); };
+var state = {pack:'set', color:'black', qty:1, photo:'black'};
+var cart = [];
+var lastFocus = null, statusTimer = null;
+var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var stageSig = '', lastN = -1;
+var auto = {timer:null, stopped:false, paused:false};
+
+function variant(pack,color){ return VARIANTS.filter(function(v){return v.pack===pack && v.color===color;})[0]; }
+function variantById(id){ return VARIANTS.filter(function(v){return v.id===id;})[0]; }
+function photoFor(color){ return GALLERY.filter(function(g){return g.key===color;})[0]; }
+function galleryItem(key){ return GALLERY.filter(function(g){return g.key===key;})[0]; }
+function packLabel(p){ return p==='set' ? '2-Piece Set' : 'Single Clicker'; }
+function say(msg){ var s=$('status'); s.textContent = msg; clearTimeout(statusTimer); if(msg){ statusTimer=setTimeout(function(){ s.textContent=''; },4000); } }
+
+/* ---- gallery + options ---- */
+function buildThumbs(){
+  var box=$('thumbs'); box.textContent='';
+  GALLERY.forEach(function(g){
+    var b=document.createElement('button'); b.type='button'; b.className='thumb'; b.dataset.key=g.key;
+    b.setAttribute('aria-label','Show photo: '+(g.key==='dog'?'training with a dog':COLORS[g.key].name+' clicker'));
+    var im=document.createElement('img'); im.src=g.thumb; im.alt=''; im.loading='lazy'; b.appendChild(im); box.appendChild(b);
+  });
+}
+function renderStage(){
+  var g=galleryItem(state.photo), st=$('stage'), i1=$('mainImg'), i2=$('mainImg2');
+  var isDog = state.photo==='dog', isSet = state.pack==='set' && !isDog;
+  var sig=state.photo+'|'+state.pack, changed=(sig!==stageSig); stageSig=sig;
+  i1.src=g.src; i1.alt=g.alt; i1.width=g.w; i1.height=g.h;
+  st.classList.toggle('photo-dog',isDog); st.classList.toggle('is-set',isSet);
+  i2.hidden=!isSet; if(isSet){ i2.src=g.src; }
+  if(changed && !reduceMotion){ var cls=auto.slide?'slide':'swap'; auto.slide=false; [i1,i2].forEach(function(im){ im.classList.remove('swap','slide'); void im.offsetWidth; im.classList.add(cls); }); }
+  $('setBadge').hidden=!isSet;
+  Array.prototype.forEach.call(document.querySelectorAll('.thumb'),function(t){ t.setAttribute('aria-current', t.dataset.key===state.photo ? 'true':'false'); });
+  var note='';
+  if(!photoFor(state.color)){ note='Photo shows a different colour. You will receive the clicker in '+COLORS[state.color].name+'.'; }
+  else if(isSet){ note='Illustration of a 2-piece set.'; }
+  $('photoNote').textContent=note;
+}
+function renderSwatches(){
+  var box=$('swatches'); box.textContent='';
+  VARIANTS.filter(function(v){return v.pack===state.pack && v.stock>0;}).forEach(function(v){
+    var c=COLORS[v.color];
+    var w=document.createElement('div'); w.className='sw';
+    var inp=document.createElement('input'); inp.type='radio'; inp.name='color'; inp.id='c-'+v.color; inp.value=v.color; inp.checked=(v.color===state.color);
+    var lab=document.createElement('label'); lab.setAttribute('for',inp.id);
+    var dot=document.createElement('span'); dot.className='dot'; dot.style.setProperty('--c',c.hex);
+    var t=document.createElement('span'); t.className='vh'; t.textContent=c.name;
+    lab.appendChild(dot); lab.appendChild(t); w.appendChild(inp); w.appendChild(lab); box.appendChild(w);
+  });
+  $('colorName').textContent=COLORS[state.color].name;
+}
+function renderBuy(){
+  var v=variant(state.pack,state.color), total=v.price*state.qty;
+  $('qVal').textContent=state.qty;
+  $('addPrice').textContent=eur(total);
+  var w=$('addWas'); w.hidden=!(v.pack==='set'); w.textContent=eur(WAS_SET*state.qty);
+  $('skuVal').textContent=v.sku;
+  $('stockLine').textContent = v.stock>0 ? 'In stock' : 'Out of stock';
+  $('addBtn').disabled = v.stock<=0;
+  var b=$('buyNow'); b.href='https://'+SHOP+'/cart/'+v.id+':'+state.qty;
+  $('pack-set').checked = state.pack==='set'; $('pack-single').checked = state.pack==='single';
+}
+function renderAll(){ renderSwatches(); renderStage(); renderBuy(); }
+
+function setPack(p){
+  state.pack=p;
+  if(!variant(p,state.color)){ state.color = VARIANTS.filter(function(v){return v.pack===p;})[0].color; }
+  if(photoFor(state.color)){ state.photo=state.color; }
+  renderAll();
+}
+function setColor(c){ state.color=c; if(photoFor(c)){ state.photo=c; } renderAll(); }
+
+/* ---- cart ---- */
+function loadCart(){
+  try{
+    var raw=localStorage.getItem(KEY); if(!raw) return;
+    var arr=JSON.parse(raw);
+    if(Array.isArray(arr)){ cart=arr.filter(function(i){ return variantById(i.id) && i.qty>0; }).map(function(i){ return {id:i.id,qty:Math.min(MAXQ,Math.floor(i.qty))}; }); }
+  }catch(e){ cart=[]; }
+}
+function saveCart(){ try{ localStorage.setItem(KEY,JSON.stringify(cart)); }catch(e){} }
+function cartQty(){ return cart.reduce(function(s,i){return s+i.qty;},0); }
+function cartTotal(){ return cart.reduce(function(s,i){return s+variantById(i.id).price*i.qty;},0); }
+function checkoutUrl(){ return 'https://'+SHOP+'/cart/'+cart.map(function(i){return i.id+':'+i.qty;}).join(','); }
+
+function renderCart(){
+  var n=cartQty(), cc=$('cartCount');
+  cc.hidden = n===0; cc.textContent=n;
+  if(lastN>=0 && n>lastN && !reduceMotion){ cc.classList.remove('bump'); void cc.offsetWidth; cc.classList.add('bump'); }
+  lastN=n;
+  $('cartBtn').setAttribute('aria-label','Open cart, '+n+(n===1?' item':' items'));
+  var body=$('drawerBody'); body.textContent='';
+  var foot=$('drawerFoot'), co=$('checkoutBtn');
+  if(!cart.length){
+    var e=document.createElement('div'); e.className='d-empty';
+    var p=document.createElement('p'); p.textContent='Your cart is empty.';
+    var b=document.createElement('button'); b.type='button'; b.className='btn btn-primary'; b.textContent='CHOOSE YOUR CLICKER'; b.dataset.act='shop'; b.style.flex='none';
+    e.appendChild(p); e.appendChild(b); body.appendChild(e);
+    foot.hidden=true; co.setAttribute('aria-disabled','true'); co.href='#'; return;
+  }
+  foot.hidden=false; co.removeAttribute('aria-disabled'); co.href=checkoutUrl();
+  $('subTotal').textContent=eur(cartTotal()); $('shipCost').textContent=eur(SHIPPING); $('grandTotal').textContent=eur(cartTotal()+SHIPPING);
+  cart.forEach(function(item){
+    var v=variantById(item.id), c=COLORS[v.color], ph=photoFor(v.color);
+    var row=document.createElement('div'); row.className='line';
+    var th=document.createElement('div'); th.className='th';
+    if(ph){ var im=document.createElement('img'); im.src=ph.thumb; im.alt=''; th.appendChild(im); }
+    else { var d=document.createElement('i'); d.style.setProperty('--c',c.hex); th.appendChild(d); }
+    var info=document.createElement('div');
+    var h=document.createElement('h4'); h.textContent='PawClick™ — '+packLabel(v.pack);
+    var m=document.createElement('div'); m.className='m'; m.textContent=c.name+' · '+eur(v.price)+(v.pack==='set'?' (was '+eur(WAS_SET)+')':'');
+    var ops=document.createElement('div'); ops.className='ops';
+    var mini=document.createElement('div'); mini.className='mini'; mini.setAttribute('role','group'); mini.setAttribute('aria-label','Quantity for '+packLabel(v.pack)+' '+c.name);
+    var mi=document.createElement('button'); mi.type='button'; mi.textContent='−'; mi.dataset.act='dec'; mi.dataset.id=v.id; mi.setAttribute('aria-label','Decrease quantity');
+    var o=document.createElement('output'); o.textContent=item.qty;
+    var pl=document.createElement('button'); pl.type='button'; pl.textContent='+'; pl.dataset.act='inc'; pl.dataset.id=v.id; pl.setAttribute('aria-label','Increase quantity');
+    mini.appendChild(mi); mini.appendChild(o); mini.appendChild(pl);
+    var lt=document.createElement('strong'); lt.textContent=eur(v.price*item.qty);
+    var rm=document.createElement('button'); rm.type='button'; rm.className='rm'; rm.textContent='Remove'; rm.dataset.act='rm'; rm.dataset.id=v.id;
+    ops.appendChild(mini); ops.appendChild(lt);
+    info.appendChild(h); info.appendChild(m); info.appendChild(ops); info.appendChild(rm);
+    row.appendChild(th); row.appendChild(info); body.appendChild(row);
+  });
+}
+function addToCart(){
+  var v=variant(state.pack,state.color); if(!v || v.stock<=0) return;
+  var line=cart.filter(function(i){return i.id===v.id;})[0], have=line?line.qty:0;
+  var room=Math.min(MAXQ,v.stock)-have;
+  if(room<=0){ say('You already have the maximum of '+Math.min(MAXQ,v.stock)+' of this option in your cart.'); return; }
+  var add=Math.min(state.qty,room);
+  if(line){ line.qty+=add; } else { cart.push({id:v.id,qty:add}); }
+  saveCart(); renderCart();
+  if(add<state.qty){ say('Added '+add+'. The limit for this option is '+Math.min(MAXQ,v.stock)+' per order.'); }
+  var b=$('addBtn'), orig=b.innerHTML; b.textContent='ADDED ✓';
+  setTimeout(function(){ b.innerHTML=orig; renderBuy(); },900);
+  flyToCart(function(){ openDrawer(); });
+}
+function changeLine(id,act){
+  var i=cart.filter(function(x){return x.id===id;})[0]; if(!i) return;
+  var cap=Math.min(MAXQ,variantById(id).stock);
+  if(act==='inc'){ if(i.qty<cap){ i.qty++; } }
+  if(act==='dec'){ i.qty--; }
+  if(act==='rm' || i.qty<=0){ cart=cart.filter(function(x){return x.id!==id;}); }
+  saveCart(); renderCart();
+}
+
+/* ---- overlays ---- */
+function lockScroll(on){ document.body.style.overflow = on ? 'hidden' : ''; }
+function openDrawer(){ lastFocus=document.activeElement; $('drawerLayer').hidden=false; lockScroll(true); $('drawerClose').focus(); }
+function closeDrawer(){ $('drawerLayer').hidden=true; lockScroll(false); if(lastFocus && lastFocus.focus){ lastFocus.focus(); } }
+function openLb(){ lastFocus=document.activeElement; var i=$('mainImg'); $('lbImg').src=i.src; $('lbImg').alt=i.alt; $('lb').hidden=false; lockScroll(true); $('lbClose').focus(); }
+function closeLb(){ $('lb').hidden=true; lockScroll(false); if(lastFocus && lastFocus.focus){ lastFocus.focus(); } }
+
+/* ---- reviews ---- */
+var DEMO = [
+  {name:'Sample customer A',title:'Sample review title',text:'This is placeholder text for previewing the layout. It is not a real customer review.',rating:5,date:'2026-10-01',verified:false},
+  {name:'Sample customer B',title:'Sample review title',text:'This is placeholder text for previewing the layout. It is not a real customer review.',rating:4,date:'2026-09-20',verified:false},
+  {name:'Sample customer C',title:'Sample review title',text:'This is placeholder text for previewing the layout. It is not a real customer review.',rating:5,date:'2026-09-02',verified:false}
+];
+function starRow(n){
+  var d=document.createElement('div'); d.className='stars'; d.setAttribute('role','img'); d.setAttribute('aria-label',n+' out of 5 stars');
+  for(var i=1;i<=5;i++){ var s=document.createElementNS('http://www.w3.org/2000/svg','svg'); s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('aria-hidden','true'); if(i>Math.round(n)){ s.setAttribute('class','off'); }
+    var u=document.createElementNS('http://www.w3.org/2000/svg','use'); u.setAttribute('href','#i-star'); s.appendChild(u); d.appendChild(s); }
+  return d;
+}
+function reviewData(){ return REVIEW_MODE==='demo' ? DEMO : REVIEWS; }
+function avg(list){ return list.reduce(function(s,r){return s+r.rating;},0)/list.length; }
+function renderRatingLine(){
+  var box=$('ratingLine'); box.textContent=''; var list=reviewData();
+  if(list.length){
+    box.appendChild(starRow(avg(list)));
+    var a=document.createElement('a'); a.href='#reviews'; a.textContent=avg(list).toFixed(1)+' out of 5 · '+list.length+(REVIEWS_ARE_SAMPLE?' sample':'')+(list.length===1?' review':' reviews'); box.appendChild(a);
+  } else {
+    box.appendChild(starRow(0));
+    var a2=document.createElement('a'); a2.href='#reviews'; a2.textContent='No reviews yet'; box.appendChild(a2);
+  }
+}
+function renderReviews(sort){
+  var box=$('revBox'); box.textContent=''; var list=reviewData().slice();
+  if(!list.length){
+    var e=document.createElement('div'); e.className='empty';
+    var h=document.createElement('h3'); h.textContent='No reviews yet';
+    var p=document.createElement('p'); p.textContent='We only show reviews from real customers. If you have tried PawClick™ with your pet, we would love to hear how training is going.';
+    e.appendChild(h); e.appendChild(p);
+    if(REVIEW_URL){ var l=document.createElement('a'); l.className='btn btn-primary'; l.href=REVIEW_URL; l.target='_blank'; l.rel='noopener'; l.textContent='WRITE A REVIEW'; l.style.flex='none'; e.appendChild(l); }
+    else { var q=document.createElement('p'); q.innerHTML='Send your feedback to <span class="addr"></span>.'; q.querySelector('.addr').textContent=SUPPORT_EMAIL; e.appendChild(q); }
+    box.appendChild(e); return;
+  }
+  sort = sort || 'new';
+  var top=document.createElement('div'); top.className='rev-top';
+  var sc=document.createElement('div'); sc.className='score'; sc.textContent=avg(list).toFixed(1);
+  var meta=document.createElement('div'); meta.appendChild(starRow(avg(list)));
+  var cnt=document.createElement('div'); cnt.className='fine'; cnt.textContent='Based on '+list.length+(list.length===1?' review':' reviews'); meta.appendChild(cnt);
+  var tools=document.createElement('div'); tools.className='rev-tools';
+  if(REVIEW_URL){ var w=document.createElement('a'); w.className='chip'; w.href=REVIEW_URL; w.target='_blank'; w.rel='noopener'; w.style.textDecoration='none'; w.textContent='Write a review'; tools.appendChild(w); }
+  top.appendChild(sc); top.appendChild(meta); top.appendChild(tools); box.appendChild(top);
+  var grid=document.createElement('div'); grid.className='rev-track';
+  list.forEach(function(r){
+    var c=document.createElement('article'); c.className='rev'; c.appendChild(starRow(r.rating));
+    var t=document.createElement('h3'); t.textContent=r.title; var p=document.createElement('p'); p.textContent=r.text;
+    var w=document.createElement('div'); w.className='who'; var n=document.createElement('span'); n.textContent=r.name; w.appendChild(n); if(r.date){ var d=document.createElement('span'); d.textContent=new Date(r.date).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}); w.appendChild(d); }
+    if(r.verified){ var vb=document.createElement('span'); vb.textContent='Verified purchase'; w.appendChild(vb); }
+    c.appendChild(t); c.appendChild(p); c.appendChild(w); grid.appendChild(c);
+  });
+  var view=document.createElement('div'); view.className='rev-view'; view.appendChild(grid); box.appendChild(view);
+  startReviewSlide(view,grid);
+}
+var rv={t:null,i:0};
+function startReviewSlide(view,track){
+  clearInterval(rv.t); rv.i=0;
+  var cards=Array.prototype.slice.call(track.children), n=cards.length;
+  if(reduceMotion){ track.classList.add('static'); return; }
+  function vis(){ return 1; }
+  if(n<=vis()){ return; }
+  for(var k=0;k<3;k++){ var cl=cards[k%n].cloneNode(true); cl.setAttribute('aria-hidden','true'); cl.classList.remove('pre','in'); track.appendChild(cl); }
+  var paused=false;
+  function stepPx(){ return cards[0].getBoundingClientRect().width+18; }
+  function go(animate){
+    track.style.transition = animate ? 'transform 1.3s cubic-bezier(.45,0,.2,1)' : 'none';
+    track.style.transform = 'translateX('+(-rv.i*stepPx())+'px)';
+  }
+  function step(){
+    if(paused || document.hidden) return;
+    rv.i++; go(true);
+    if(rv.i>=n){ setTimeout(function(){ rv.i=0; go(false); },1350); }
+  }
+  view.addEventListener('mouseenter',function(){ paused=true; });
+  view.addEventListener('mouseleave',function(){ paused=false; });
+  view.addEventListener('focusin',function(){ paused=true; });
+  view.addEventListener('focusout',function(){ paused=false; });
+  view.addEventListener('touchstart',function(){ paused=true; setTimeout(function(){ paused=false; },8000); },{passive:true});
+  window.addEventListener('resize',function(){ go(false); });
+  rv.t=setInterval(step,4200);
+}
+
+/* ---- footer + wiring ---- */
+function buildFooter(){
+  Array.prototype.forEach.call(document.querySelectorAll('[data-email]'),function(el){ el.textContent=SUPPORT_EMAIL; });
+  $('mailLink').href='mailto:'+SUPPORT_EMAIL;
+  $('yr').textContent=new Date().getFullYear();
+  var fl=$('footLinks');
+  [['privacy','Privacy policy'],['shipping','Shipping policy'],['refund','Returns and refunds'],['terms','Terms and conditions']].forEach(function(p){
+    if(POLICIES[p[0]] || POLICY_HTML[p[0]]){ var li=document.createElement('li'); li.appendChild(policyOrLink(p[0],p[1])); fl.appendChild(li); }
+  });
+  var ra=$('returnAns'); ra.textContent='You can return an item within 14 days of receiving it. Read our full ';
+  ra.appendChild(policyOrLink('refund','returns and refunds policy')); ra.appendChild(document.createTextNode(', or email us at '));
+  var em=document.createElement('span'); em.className='addr'; em.textContent=SUPPORT_EMAIL; ra.appendChild(em); ra.appendChild(document.createTextNode('.'));
+  var sa=$('shipAns'); sa.appendChild(document.createTextNode(' ')); sa.appendChild(policyOrLink('shipping','Read our shipping policy.'));
+  var so=$('socials'); if(!SOCIALS.length){ so.hidden=true; }
+  SOCIALS.forEach(function(s){ var li=document.createElement('li'), a=document.createElement('a'); a.href=s.url; a.target='_blank'; a.rel='noopener'; a.textContent=s.name; li.appendChild(a); so.appendChild(li); });
+}
+
+document.addEventListener('DOMContentLoaded',function(){});
+buildThumbs(); buildFooter(); loadCart();
+renderAll(); renderCart(); renderRatingLine(); renderReviews();
+
+$('packs').addEventListener('change',function(e){ if(e.target.name==='pack'){ setPack(e.target.value); } });
+$('swatches').addEventListener('change',function(e){ if(e.target.name==='color'){ setColor(e.target.value); } });
+$('thumbs').addEventListener('click',function(e){ var b=e.target.closest('.thumb'); if(b){ state.photo=b.dataset.key; renderStage(); } });
+$('qMinus').addEventListener('click',function(){ if(state.qty>1){ state.qty--; renderBuy(); } });
+$('qPlus').addEventListener('click',function(){ if(state.qty<MAXQ){ state.qty++; renderBuy(); } else { say('The limit is '+MAXQ+' per order for this option.'); } });
+$('addBtn').addEventListener('click',addToCart);
+$('zoomBtn').addEventListener('click',openLb);
+$('lbClose').addEventListener('click',closeLb);
+$('lb').addEventListener('click',function(e){ if(e.target===$('lb')){ closeLb(); } });
+$('cartBtn').addEventListener('click',openDrawer);
+$('drawerClose').addEventListener('click',closeDrawer);
+$('drawerScrim').addEventListener('click',closeDrawer);
+$('drawerBody').addEventListener('click',function(e){
+  var b=e.target.closest('button'); if(!b) return;
+  if(b.dataset.act==='shop'){ closeDrawer(); location.hash='shop'; return; }
+  if(b.dataset.act){ changeLine(b.dataset.id,b.dataset.act); }
+});
+$('checkoutBtn').addEventListener('click',function(e){ if(!cart.length){ e.preventDefault(); } });
+$('menuBtn').addEventListener('click',function(){ var m=$('mobileMenu'), open=m.hidden; m.hidden=!open; this.setAttribute('aria-expanded',String(open)); });
+$('mobileMenu').addEventListener('click',function(e){ if(e.target.tagName==='A'){ $('mobileMenu').hidden=true; $('menuBtn').setAttribute('aria-expanded','false'); } });
+var POLICY_TITLES = {shipping:'Shipping policy',refund:'Returns and refunds policy',terms:'Terms and conditions',privacy:'Privacy policy'};
+function policyBtn(key,label){ var b=document.createElement('button'); b.type='button'; b.className='linkbtn'; b.dataset.policy=key; b.textContent=label; return b; }
+function policyOrLink(key,label){
+  if(POLICIES[key]){ var a=document.createElement('a'); a.href=POLICIES[key]; a.target='_blank'; a.rel='noopener'; a.textContent=label; return a; }
+  return policyBtn(key,label);
+}
+function openPolicy(key){
+  if(!POLICY_HTML[key]) return;
+  lastFocus=document.activeElement;
+  $('polTitle').textContent=POLICY_TITLES[key]||'Policy';
+  $('polBody').innerHTML=POLICY_HTML[key];
+  $('polBody').scrollTop=0;
+  $('polLayer').hidden=false; lockScroll(true); $('polClose').focus();
+}
+function closePolicy(){ $('polLayer').hidden=true; lockScroll(false); if(lastFocus && lastFocus.focus){ lastFocus.focus(); } }
+document.addEventListener('click',function(e){ var b=e.target.closest('[data-policy]'); if(b){ openPolicy(b.dataset.policy); } });
+$('polClose').addEventListener('click',closePolicy);
+$('polLayer').addEventListener('click',function(e){ if(e.target===$('polLayer')){ closePolicy(); } });
+document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ if(!$('polLayer').hidden){ closePolicy(); } else if(!$('lb').hidden){ closeLb(); } else if(!$('drawerLayer').hidden){ closeDrawer(); } } });
+
+/* ---- gallery slideshow: runs on its own at first, stops for good on the first touch/click/key ---- */
+function cycleKeys(){ return GALLERY.map(function(g){return g.key;}).filter(function(k){ return k==='dog' || variant(state.pack,k); }); }
+function ghostOut(){
+  if(reduceMotion || !Element.prototype.animate) return;
+  var st=$('stage');
+  [$('mainImg'),$('mainImg2')].forEach(function(im){
+    if(im.hidden || !im.offsetWidth) return;
+    var g=im.cloneNode(false), cs=getComputedStyle(im), tf=cs.transform, op0=cs.opacity, t0=(cs.translate && cs.translate!=='none')?cs.translate:'0px 0px', dog=(state.photo==='dog');
+    g.removeAttribute('id'); g.alt=''; g.setAttribute('aria-hidden','true'); g.classList.remove('swap');
+    g.style.cssText='position:absolute;z-index:1;pointer-events:none;margin:0;max-width:none;animation:none;object-fit:'+(dog?'cover':'contain')+';object-position:50% 35%;left:'+im.offsetLeft+'px;top:'+im.offsetTop+'px;width:'+im.offsetWidth+'px;height:'+im.offsetHeight+'px;transform:'+tf+';';
+    st.appendChild(g);
+    function drop(){ if(g.parentNode){ g.parentNode.removeChild(g); } }
+    g.style.opacity=op0; g.style.translate=t0;
+    var a=g.animate([{opacity:op0,translate:t0},{opacity:0,translate:'-72px 0'}],{duration:1200,easing:'cubic-bezier(.45,0,.2,1)',fill:'forwards'});
+    a.onfinish=drop; setTimeout(drop,1600);
+  });
+}
+var preload = {};
+GALLERY.forEach(function(g){ var im=new Image(); im.decoding='async'; im.src=g.src; preload[g.key]=im; });
+function whenReady(key,cb){ var im=preload[key]; if(im && im.decode){ im.decode().then(cb,cb); } else { cb(); } }
+function syncSwatch(){ var r=document.getElementById('c-'+state.color); if(r){ r.checked=true; } $('colorName').textContent=COLORS[state.color].name; }
+function autoStep(){
+  if(auto.stopped || auto.paused || auto.busy || document.hidden) return;
+  var keys=cycleKeys(), next=keys[(keys.indexOf(state.photo)+1)%keys.length];
+  auto.busy=true;
+  /* wait until the next photo is fully decoded, so it never pops in half-way through the slide */
+  whenReady(next,function(){
+    auto.busy=false;
+    if(auto.stopped || auto.paused) return;
+    ghostOut();
+    auto.slide=true;
+    state.photo=next;
+    if(next!=='dog'){ state.color=next; }
+    renderStage(); renderBuy(); syncSwatch();
+  });
+}
+function autoStop(){ if(auto.stopped) return; auto.stopped=true; clearInterval(auto.timer); }
+if(!reduceMotion){
+  setTimeout(function(){ if(!auto.stopped){ auto.timer=setInterval(autoStep,5200); } },2400);
+  ['pointerdown','touchstart','keydown','focusin'].forEach(function(ev){ $('shop').addEventListener(ev,autoStop,{passive:true}); });
+  $('stage').addEventListener('mouseenter',function(){ auto.paused=true; });
+  $('stage').addEventListener('mouseleave',function(){ auto.paused=false; });
+}
+
+/* ---- motion helpers ---- */
+function flyToCart(done){
+  if(reduceMotion || !Element.prototype.animate){ done(); return; }
+  var src=$('mainImg'), cbR=$('cartBtn').getBoundingClientRect(), r=src.getBoundingClientRect();
+  if(!r.width || !cbR.width){ done(); return; }
+  var c=src.cloneNode(false); c.removeAttribute('id'); c.alt=''; c.setAttribute('aria-hidden','true'); c.classList.remove('swap');
+  c.style.cssText='position:fixed;z-index:80;pointer-events:none;margin:0;max-width:none;object-fit:contain;animation:none;translate:none;rotate:none;left:'+r.left+'px;top:'+r.top+'px;width:'+r.width+'px;height:'+r.height+'px;';
+  document.body.appendChild(c);
+  var dx=cbR.left+cbR.width/2-(r.left+r.width/2), dy=cbR.top+cbR.height/2-(r.top+r.height/2), s=Math.max(.05,32/r.width), fired=false;
+  function end(){ if(fired) return; fired=true; if(c.parentNode){ c.parentNode.removeChild(c); } done(); }
+  var a=c.animate([{transform:'translate(0,0) scale(1)',opacity:.95},{transform:'translate('+dx+'px,'+dy+'px) scale('+s+')',opacity:.3}],{duration:620,easing:'cubic-bezier(.5,0,.75,.4)',fill:'forwards'});
+  a.onfinish=end; setTimeout(end,900);
+}
+(function(){
+  if(reduceMotion || !('IntersectionObserver' in window)) return;
+  var sel='.band .sec-head,.feat .card,.steps .step,.inc>*,.life-copy,.empty,.faq details,.cta .copy,.cta .cta-in>img,.foot>div';
+  var els=document.querySelectorAll(sel), vh=window.innerHeight, k=0;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  Array.prototype.forEach.call(els,function(el){
+    if(el.getBoundingClientRect().top>vh*0.9){
+      el.classList.add('pre'); el.style.setProperty('--d',((k++%3)*90)+'ms'); io.observe(el);
+      el.addEventListener('transitionend',function(ev){ if(ev.propertyName==='transform'){ el.classList.remove('pre','in'); el.style.removeProperty('--d'); } });
+    }
+  });
+})();
+})();
+</script>
+
+</body></html>
